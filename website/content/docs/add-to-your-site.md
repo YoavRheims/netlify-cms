@@ -242,7 +242,7 @@ Netlify's Identity and Git Gateway services allow you to manage CMS admin users 
 With the backend set to handle authentication, now you need a frontend interface to connect to it. The open source Netlify Identity Widget is a drop-in widget made for just this purpose. To include the widget in your site, add the following script tag in two places:
 
 ```html
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 ```
 
 Add this to the `<head>` of your CMS index page at `/admin/index.html`, as well as the `<head>` of your site's main index page. Depending on how your site generator is set up, this may mean you need to add it to the default template, or to a "partial" or "include" template. If you can find where the site stylesheet is linked, that's probably the right place. Alternatively, you can include the script in your site using Netlify's [Script Injection](https://www.netlify.com/docs/inject-analytics-snippets/) feature.
